@@ -33,6 +33,7 @@ public class Main {
 
                 System.out.print(i + ". " ); // Выводит номер слова
                 System.out.println(wordsArray[i]); // выводит слово на каком номере
+
             }
 
         }
