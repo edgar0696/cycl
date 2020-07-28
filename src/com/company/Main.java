@@ -22,17 +22,20 @@ public class Main {
         String [] wordsArray = textTrashFree.split(" "); //array - масив слов текста Гарри потер
         System.out.println(wordsArray.length);
 
-        for (int i = 0; i < wordsArray.length ; i++) {
+        for (int i = 0; i <100; i++) {
 
-                  // все слова длинна которых больше или ровна 3 согласно условиям
-            if ( (wordsArray[i].length()>=3) && (wordsArray[i].charAt(0) == 'a') ){ //&& коньюнция (и)
-                                                 // Первая буква charAt(0) слова - "а"
-                                                 // есть первая нулевая
-                                                 // charAt берется в одиночных скобках
+            // все слова которе начинаются на Б    // все слова которые начинаются на А
+            if ( (wordsArray[i].length() >=3) && ( (wordsArray[i].charAt(0) == 'b') || (wordsArray[i].charAt(0) == 'a') ) ) {// "||" дисджиншен.
+                //Первая буква charAt(0) солова "а"
+                // есть первая "нулевая"!!!! запомните!!
+                // charAt берется в одиночных кавычках
 
 
-                System.out.print(i + ". " ); // Выводит номер слова
-                System.out.println(wordsArray[i]); // выводит слово на каком номере
+
+                System.out.print(i + ". ");// выводит номер слова
+                System.out.println(wordsArray[i]);// это выводит слово на каком номере
+            }else {
+                System.out.println(i + " Слово (" + wordsArray[i] + ") не подходит");
 
             }
 
